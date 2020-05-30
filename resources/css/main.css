@@ -1,0 +1,129 @@
+*, ::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  overflow-x: hidden;
+}
+
+/*Typo*/
+h1 {
+  font-family: 'Playfair Display',Times, serif;
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 0.9;
+  opacity: 0.8;
+}
+
+h1 span {
+  font-size: 1.6rem;
+  line-height: 0.1;
+}
+
+h2 {
+  font-family: 'Playfair Display',Times, serif;
+  font-size: 0.8rem;
+  font-weight: 100;
+  line-height: 50px;
+}
+
+p.pronounce {
+  font-family: 'Playfair Display',Times, serif;
+  color: lightgray;
+  font-size: 1.7rem;
+  font-weight: 100;
+  line-height: 0.9;
+}
+
+ul li, ul li a {
+  text-decoration: none;
+  color: black;
+  list-style-type: none;
+  font-size: 1rem;
+}
+
+ul li a:hover {
+  font-size: 0.9rem;
+  transition-property: font-size;
+  transition-duration: 0.75s;
+}
+
+.social i {
+  color: lightgray;
+  font-size: 2.25rem;
+}
+
+/*Layout*/
+div.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*mobile viewport needs betterment*/
+@media only screen and (max-width:540px) {
+  header {
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  ul li a {
+    font-size: 2rem;
+  }
+  ul li a:hover {
+    font-size: 1.8rem;
+  }
+  footer h2 {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  div.social {
+    padding-top: 15px;
+  }
+}
+
+
+
+
+
+  nav ul li {
+    padding: 5px;
+    text-align: center;
+  }
+
+  footer {
+    text-align: center;
+    padding: 80px;
+    position: relative;
+    bottom: 0;
+  }
+  div.social {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
