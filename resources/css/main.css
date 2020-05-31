@@ -43,6 +43,7 @@ ul li, ul li a {
   color: black;
   list-style-type: none;
   font-size: 1rem;
+  font-family: 'Playfair Display',Times, serif;
 }
 
 ul li a:hover {
